@@ -4,13 +4,14 @@ import { FaGithub } from 'react-icons/fa';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { RiHome2Line } from 'react-icons/ri';
 
 const Navbar = () => {
     const pathname = usePathname()
 
     const link = <>
         <li><Link href="/" className={`pb-2 font-semibold ${pathname === '/' ?
-            'border-b-2 border-purple-500 text-violet-500' : ''}`}>Home</Link></li>
+            'border-b-2 bg-[#244D3F] text-white' : ''}`}><RiHome2Line />Home</Link></li>
     </>
 
     return (

@@ -11,25 +11,25 @@ const Banner = () => {
                             Your personal shelf of meaningful connections. Browse, tend, and nurture the <br />
                             relationships that matter most.
                         </p>
-                        <button className="btn btn-primary bg-[#244D3F] mb-10"><FaPlus />Add a Friend</button>
+                        <button className="btn bg-[#244D3F] text-white mb-10"><FaPlus />Add a Friend</button>
                     </div>
                 </div>
                 <div className='flex items-center gap-6 justify-center'>
-                    <div className='bg-white rounded-2xl text-center p-6 px-15'>
+                    <div className='bg-white rounded-2xl text-center py-8 px-15 w-full h-34'>
                         <h2 className="text-[#244D3F] text-2xl font-medium">10</h2>
                         <p className="text-gray-600 text-lg">Total Friends</p>
                     </div>
-                    <div className='bg-white rounded-2xl text-center p-6 px-15'>
-                        <h2 className="text-[#244D3F] text-2xl font-medium">10</h2>
-                        <p className="text-gray-600 text-lg">Total Friends</p>
+                    <div className='bg-white rounded-2xl text-center py-8 px-15 w-full h-34'>
+                        <h2 className="text-[#244D3F] text-2xl font-medium">3</h2>
+                        <p className="text-gray-600 text-lg">On Track</p>
                     </div>
-                    <div className='bg-white rounded-2xl text-center p-6 px-15'>
+                    <div className='bg-white rounded-2xl text-center py-8 px-15 w-full h-34'>
                         <h2 className="text-[#244D3F] text-2xl font-medium">10</h2>
-                        <p className="text-gray-600 text-lg">Total Friends</p>
+                        <p className="text-gray-600 text-lg">Need Attention</p>
                     </div>
-                    <div className='bg-white rounded-2xl text-center p-6 px-15'>
+                    <div className='bg-white rounded-2xl text-center py-8 px-15 w-full h-34'>
                         <h2 className="text-[#244D3F] text-2xl font-medium">10</h2>
-                        <p className="text-gray-600 text-lg">Total Friends</p>
+                        <p className="text-gray-600 text-lg">Interactions This Month</p>
                     </div>
                 </div>
             </div>
