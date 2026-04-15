@@ -1,17 +1,15 @@
 'use client'
-import Image from 'next/image';
-import { FaGithub } from 'react-icons/fa';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { RiHome2Line } from 'react-icons/ri';
+import { RiDashboardFill } from 'react-icons/ri';
 
 const Navbar = () => {
     const pathname = usePathname()
 
     const link = <>
-        <li><Link href="/" className={`pb-2 font-semibold ${pathname === '/' ?
-            'border-b-2 bg-[#244D3F] text-white' : ''}`}><RiHome2Line />Home</Link></li>
+        <li><Link href="/" className={`pb-2 font-semibold border ${pathname === '/' ?
+            'border-b-2 bg-[#244D3F] text-white' : ''}`}><RiDashboardFill />Dashboard</Link></li>
     </>
 
     return (

@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const FriendCard = ({ friend }) => {
     return (
-        <div className="card bg-base-100 shadow-sm p-6 h-81">
+        <Link href={`/friend/${friend.id}`} className="card bg-base-100 shadow-sm p-6 h-81 ">
             <figure>
                 <Image className="rounded-full mx-auto"
                     src={friend.picture}
@@ -29,8 +30,8 @@ const FriendCard = ({ friend }) => {
                         {friend.status}</div>
                 </div>
             </div>
-        </div>)
-
+        </Link>
+    )
 };
 
 export default FriendCard;
