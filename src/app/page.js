@@ -1,6 +1,10 @@
 import AllFriendsCards from "@/component/homepage/AllFriendsCards";
 import Banner from "@/component/homepage/Banner";
-import Image from "next/image";
+
+export const metadata = {
+    title: 'KeenKeeper',
+    description: '...'
+}
 
 export default function Home() {
   return (

@@ -11,11 +11,15 @@ const Navbar = () => {
     const link = <div className='flex gap-3 items-center justify-center'>
         <li>
             <Link href="/" className={`pb-2 font-semibold border ${pathname === '/' ?
-                'border-b-2 bg-[#244D3F] text-white' : ''}`}><RiDashboardFill />Dashboard</Link>
+                'bg-[#244D3F] text-white' : ''}`}><RiDashboardFill />Dashboard</Link>
         </li>
         <li>
             <Link href="/timeline" className={`pb-2 font-semibold border ${pathname === '/timeline' ?
-                'border-b-2 bg-[#244D3F] text-white' : ''}`}><MdOutlineMoreTime />Timeline</Link>
+                'bg-[#244D3F] text-white' : ''}`}><MdOutlineMoreTime />Timeline</Link>
+        </li>
+        <li>
+            <Link href="/stats" className={`pb-2 font-semibold border ${pathname === '/stats' ?
+                'bg-[#244D3F] text-white' : ''}`}><MdOutlineMoreTime />Stats</Link>
         </li>
     </div>
 

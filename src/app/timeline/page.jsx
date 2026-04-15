@@ -9,7 +9,7 @@ const TimelinePage = () => {
     if (communicationList.length === 0) {
         return <div className="bg-gray-100 ">
             <div className="container mx-auto min-h-[80vh] py-10 flex items-center justify-center flex-col">
-                <h2 className="text-5xl font-bold text-[#244D3F] text-center">No Communication Found</h2>
+                <h2 className="text-5xl font-bold text-[#244D3F] text-center">No Communication Done Yet</h2>
             </div>
         </div>
     }

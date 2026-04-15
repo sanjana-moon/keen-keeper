@@ -6,6 +6,11 @@ import { FiArchive } from 'react-icons/fi';
 import { HiOutlineBellSnooze } from 'react-icons/hi2';
 import { RiDeleteBin6Line } from 'react-icons/ri';
 
+export const metadata = {
+    title: 'KeenKeeper Details Page',
+    description: '...'
+}
+
 
 const FriendDetails = async ({ params }) => {
     const { friendId } = await params
