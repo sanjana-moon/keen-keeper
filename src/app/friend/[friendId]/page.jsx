@@ -24,7 +24,7 @@ const FriendDetails = async ({ params }) => {
 
     return (
         <div className='bg-gray-200'>
-            <div className='container mx-auto grid grid-cols-3 min-h-[80vh] gap-6 py-20'>
+            <div className='container mx-auto grid grid-cols-1 md:grid-cols-3 min-h-[80vh] gap-6 py-20'>
                 <div className='col-span-1 grid grid-rows-5 gap-4'>
                     <div className='bg-white row-span-3 rounded-lg card shadow-sm p-6 text-center'>
                         <figure>
@@ -67,16 +67,16 @@ const FriendDetails = async ({ params }) => {
                 </div>
 
                 <div className='col-span-2 grid grid-rows-3 gap-4'>
-                    <div className='col-row-1 grid grid-cols-3 gap-5'>
-                        <div className='flex flex-col items-center justify-center bg-white col-span-1 rounded-lg text-center '>
+                    <div className='col-row-1 grid grid-cols-1 md:grid-cols-3 gap-5'>
+                        <div className='flex flex-col items-center justify-center bg-white col-span-1 rounded-lg text-center p-5'>
                             <h2 className="text-[#244D3F] text-2xl font-medium">{friend.days_since_contact}</h2>
                             <p className="text-gray-600 text-lg">Days Since Contact</p>
                         </div>
-                        <div className='flex flex-col items-center justify-center bg-white col-span-1 rounded-lg text-center '>
+                        <div className='flex flex-col items-center justify-center bg-white col-span-1 rounded-lg text-center p-5'>
                             <h2 className="text-[#244D3F] text-2xl font-medium">{friend.goal}</h2>
                             <p className="text-gray-600 text-lg">Goal (Days)</p>
                         </div>
-                        <div className='flex flex-col items-center justify-center bg-white col-span-1 rounded-lg text-center '>
+                        <div className='flex flex-col items-center justify-center bg-white col-span-1 rounded-lg text-center p-5'>
                             <h2 className="text-[#244D3F] text-2xl font-medium">{friend.next_due_date}</h2>
                             <p className="text-gray-600 text-lg">Next Due</p>
                         </div>
@@ -92,7 +92,7 @@ const FriendDetails = async ({ params }) => {
                     </div>
                     <div className='bg-white p-4 col-row-1 rounded-lg flex flex-col justify-center px-10'>
                         <h2 className="text-xl font-medium text-[#244D3F] mb-4">Quick Check-In</h2>
-                        <div className='flex gap-5 justify-between'>
+                        <div className='flex gap-5 justify-between flex-col md:flex-row'>
                             <HandleCallBtn friend={friend}/>
                             <HandleTextBtn friend={friend}/>
                             <HandleVideoCallBtn friend={friend}/>

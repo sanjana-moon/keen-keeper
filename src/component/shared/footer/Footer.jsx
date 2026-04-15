@@ -24,7 +24,7 @@ const Footer = () => {
                     </a>
                 </div>
             </nav>
-            <div className="text-gray-400 flex items-center justify-between gap-60">
+            <div className="text-gray-400 flex items-center justify-between gap-5 md:gap-40 lg:gap-60 flex-col md:flex-row">
                 <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
                 <div className="flex items-center justify-between gap-8">
                     <p>Privacy Policy</p>

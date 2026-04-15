@@ -14,7 +14,7 @@ const Banner = () => {
                         <button className="btn bg-[#244D3F] text-white mb-10"><FaPlus />Add a Friend</button>
                     </div>
                 </div>
-                <div className='flex items-center gap-6 justify-center'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
                     <div className='bg-white rounded-2xl text-center py-8 px-15 w-full h-34'>
                         <h2 className="text-[#244D3F] text-2xl font-medium">10</h2>
                         <p className="text-gray-600 text-lg">Total Friends</p>
