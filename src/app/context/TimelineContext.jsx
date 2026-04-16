@@ -26,6 +26,10 @@ const TimelineContextProvider = ({ children }) => {
     }
 
     const handleFilterBtn = (communicationType) => {
+         if (communicationType === "all") {
+        setFilteredSection(null); // reset filter
+        return;
+    }
         setFilteredSection(communicationList.filter((friend)=> friend.communicationType === communicationType))
     }
 

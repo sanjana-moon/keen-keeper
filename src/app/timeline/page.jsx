@@ -11,6 +11,7 @@ const TimelinePage = () => {
         <li><a onClick={() => handleFilterBtn("call")}>Call</a></li>
         <li><a onClick={() => handleFilterBtn("text")}>Text</a></li>
         <li><a onClick={() => handleFilterBtn("video")}>Video Call</a></li>
+        <li><a onClick={() => handleFilterBtn("all")}>All</a></li>
     </>
 
     const dataToShow = filteredSection !== null ? filteredSection : communicationList;
