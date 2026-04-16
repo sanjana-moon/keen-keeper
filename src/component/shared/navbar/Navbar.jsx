@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { ImStatsDots } from 'react-icons/im';
 import { MdOutlineMoreTime } from 'react-icons/md';
 import { RiDashboardFill } from 'react-icons/ri';
 
@@ -9,17 +10,17 @@ const Navbar = () => {
     const pathname = usePathname()
 
     const link = <div className='flex gap-3 items-center justify-center'>
-        <li>
+        <li className='w-29'>
             <Link href="/" className={`pb-2 font-semibold border ${pathname === '/' ?
                 'bg-[#244D3F] text-white' : ''}`}><RiDashboardFill />Dashboard</Link>
         </li>
-        <li>
+        <li className='w-29'>
             <Link href="/timeline" className={`pb-2 font-semibold border ${pathname === '/timeline' ?
                 'bg-[#244D3F] text-white' : ''}`}><MdOutlineMoreTime />Timeline</Link>
         </li>
-        <li>
+        <li className='w-29 flex'>
             <Link href="/stats" className={`pb-2 font-semibold border ${pathname === '/stats' ?
-                'bg-[#244D3F] text-white' : ''}`}><MdOutlineMoreTime />Stats</Link>
+                'bg-[#244D3F] text-white' : ''}`}><ImStatsDots />Stats</Link>
         </li>
     </div>
 
